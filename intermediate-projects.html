@@ -1,0 +1,130 @@
+<!-- DEVELOPER: Shreejitha Kanduri, IS117-002, Spring 2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intermediate Projects</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- NAVBAR HERE ! -->
+        <nav class="navbar navbar-expand-md
+        justify-content-start
+        bg-dark navbar-dark
+        col-12">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="home.html">CrochetCenter</a>
+    <!-- Responsive Button for the smaller menu -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- main navbar stuff: -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <!-- Links -->
+            <li class="nav-item">
+                <a class="nav-link" href="getting-started.html">Getting Started</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="stitch-dictionary.html">Stitch Dictionary & Resources</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop"
+                   data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="projects.html">Project Information</a>
+                    <a class="dropdown-item" href="beginner-projects.html">Beginner Projects</a>
+                    <a class="dropdown-item" href="intermediate-projects.html">Intermediate Projects</a>
+                    <a class="dropdown-item" href="advanced-projects.html">Advanced Projects</a>
+                </div>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <!-- actual page content -->
+        <div class="projects-container">
+            <h1>Intermediate Projects</h1>
+            <div class="projects-information-container">
+            
+            <!-- column 1 of cards of stitches -->
+
+                <div class="project-pill">
+                    <div class="project-img"><img src="images/intermediateSkirtProject.png" class="project-img" alt="Image of a crocheted ruffle mini skirt."></div>
+                    <div class="text-box">
+                        <h5>Ruffled Skirt</h5>
+                        <p>This project is intermediate-advanced level, and requires
+                            following a pattern, rather than free-handing. It also requires some
+                            more time and coordination, but results in a satisfying wearable!
+                            <a href="https://www.youtube.com/watch?v=yklSJF9N6m0" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-pill">
+                    <div class="project-img"><img src="images/intermediateFlowerProject.png" class="project-img" alt="Image of a small crocheted daisy flower."></div>
+                    <div class="text-box">
+                        <h5>Daisy Flower</h5>
+                        <p>This project uses a variation of stitches with a granny circle, 
+                            making it a more beginner-intermediate project.
+                            Find the video <a href="https://www.youtube.com/watch?v=I3Z6BWq2tuc" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-pill">
+                    <div class="project-img"><img src="images/intermediateWaveStitch.png" class="project-img" alt="Image of a crocheted wave pattern swatch."></div>
+                    <div class="text-box">
+                        <h5>Wave Pattern</h5>
+                        <p>This pattern can be used in a multitude of projects, but comes under an 
+                            intermediate level because it requires following a pattern accurately
+                            to be successful, and takes more time to pick up the pattern. It is a combination
+                            of a multitude of beginner stitches.
+                            Find the video <a href="https://www.youtube.com/watch?v=3uMiv_fDZbk" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+
+             </div>
+
+        </div>
+
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Shreejitha Kanduri ; Due Date: 4/21/2026 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+<!-- JS for the carousel -->
+<script src="carousel.js"></script>
+
+</body>
+</html>

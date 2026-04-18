@@ -1,0 +1,119 @@
+<!-- DEVELOPER: Shreejitha Kanduri, IS117-002, Spring 2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Getting Started</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- NAVBAR HERE ! -->
+        <nav class="navbar navbar-expand-md
+        justify-content-start
+        bg-dark navbar-dark
+        col-12">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="home.html">CrochetCenter</a>
+    <!-- Responsive Button for the smaller menu -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- main navbar stuff: -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <!-- Links -->
+            <li class="nav-item">
+                <a class="nav-link" href="getting-started.html">Getting Started</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="stitch-dictionary.html">Stitch Dictionary & Resources</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop"
+                   data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="projects.html">Project Information</a>
+                    <a class="dropdown-item" href="beginner-projects.html">Beginner Projects</a>
+                    <a class="dropdown-item" href="intermediate-projects.html">Intermediate Projects</a>
+                    <a class="dropdown-item" href="advanced-projects.html">Advanced Projects</a>
+                </div>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <!-- actual page content -->
+        <div class="getting-started-container">
+            <h1>Getting Started</h1>
+            <div class="getting-started">
+                <h4>Basic Crochet Supplies</h4>
+                <ul>
+                    <li>Yarn</li>
+                    <li>A crochet hook</li>
+                    <li>Scissos</li>
+                    <li>A yarn needle (for weaving in ends)</li>
+                </ul>
+                <h4>Choosing Yarn & Hooks</h4>
+                <p> When choosing a yarn for a project, you need to consider many factors.
+                    The first is fiber type (wool, cotton, bamboo, etc), as this
+                    changes the way the crocheted project will lay on. Yarn weight
+                    also changes, depending on if the crocheted item is lacework, a blanket, a garment 
+                    or other items. Also consider the yarn size in conjunction
+                    with your hook, and the care/maintanence your yarn requires.
+                </p>
+                <p>When choosing a hook to use or purchase, there are multiple factors
+                    to consider. Hooks come in aluminum or metal, plastic, and wood, so it is important to find
+                    what feels most comfortable and smooth when using each kind
+                    personally. Hooks also come in simpler or more ergonomic
+                    forms, and it is imporant the hook size you choose is compatible with
+                    the yarn size you are using, (within +/- 1 mm of the yarn).
+                </p>
+                <h4>Basic Stitches</h4>
+                <ul>
+                    <li>Chain (ch): The foundation of most crochet projects.</li>
+                    <li>Single Crochet (sc): A short, tight stitch great for sturdy fabric. </li>
+                    <li>Double Crochet (dc): A taller stitch that creates a softer fabric.</li>
+                    <li>Turning and Starting a New Row: After completing a row, you create turning chains to reach the height of the next row before continuing.</li>
+                </ul>
+            </div>
+        </div>
+
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Shreejitha Kanduri ; Due Date: 4/21/2026 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+<!-- JS for the carousel -->
+<script src="carousel.js"></script>
+
+</body>
+</html>

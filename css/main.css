@@ -1,0 +1,275 @@
+/* DEVELOPER: Shreejitha Kanduri, IS117-002, Spring 2026 --> */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00B4D8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+
+/* global styles */
+
+/* header styles */
+h1 {
+    color: #59B2D1;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h4, label {
+    color: #001D4A;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #00B4D8;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: yellow;
+}
+
+/* editing the navbar looks: */
+.navbar.bg-dark{
+    background-color: #00B4D8 !important;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu{
+    border-radius: 20;
+    border: none;
+}
+
+/* making navbar text bold, on regular and hover */
+.navbar-brand, .nav-link {
+    font-weight: bold;
+    color: white important!;
+}
+
+.dropdown-item, .dropdown-item:hover{
+    color: white !important;
+    background-color: #00B4D8;
+}
+
+/* getting navabr links to be right aligned */
+#collapsibleNavbar {
+    justify-content: flex-end;
+    color: white;
+}
+
+/* contact page CSS */
+#contact-container {
+    text-align: center;
+}
+
+/* contact page form elements */
+.form-group {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* home page styling */
+#what-is-crochet {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* carousel for homepage */
+
+.carousel-container{
+    position: relative;
+    max-width: 600px;
+    max-height: 200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: 100%
+}
+
+#nextBtn { 
+    right: 0; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#prevBtn { 
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cards-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    background-color: #00B4D8 !important; 
+    border: none !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+    max-width: 350px;
+    margin-bottom: 20px;
+    color: white;
+    h4{
+        color: white;
+    }
+}
+
+/* getting started container */
+.getting-started-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    h1{
+        text-align: center;
+    }
+
+    .card{
+        background-color: #00B4D8;
+        color: white;
+    }
+
+}
+
+.getting-started{
+    text-align: left;
+}
+
+/* projects page */
+.projects-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    .project-cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+/* stitch resources page */
+.stitch-pill {
+    border: 4px solid #00B4D8;
+    max-width: 70vw;
+    
+    display: flex;
+    align-items: center;
+    background-color: #00B4D8;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.symbol-box {
+    background-color: white;
+    color: #59B2D1;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    align-self: stretch;
+
+    img{
+        object-fit: cover;
+    }
+}
+
+.text-box {
+    color: white;
+    margin-left: 10px;
+}
+
+.project-pill {
+    border: 4px solid #00B4D8;
+    max-width: 90vw;
+    
+    display: flex;
+    align-items: center;
+    background-color: #00B4D8;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+
+    img{
+        border-radius: 10px;
+        width: 40em;
+        align-self: stretch;
+    }
+    a{
+        color: yellow;
+    }
+}
+
+/* media queries to make the page responsive to smaller mobile devices */
+@media (max-width: 800px){
+
+    /* shrink header sizes */
+    h1{
+        font-size: 2em !important;
+        text-align: center;
+    }
+
+    /* to get the pill boxes to be vertically stacked */
+    .stitch-pill, .project-pill{
+        flex-direction: column;
+        max-width: 95vw;
+        height: auto;
+        max-height: none;
+    }
+
+    /* to make the images fill properly */
+    .symbol-box, project-img{
+        width: 100% !important; 
+        height: 150px;
+        border-radius: 50px;
+    }
+
+    /* getting the project pill images to fit properly */
+    .project-pill img {
+        width: 100% !important;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
